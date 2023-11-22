@@ -2,7 +2,7 @@
   "name": "@test/test2-my",
   "version": "2.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/index.mjs",
   "type": "module",
   "scripts": {
     "build": "rollup -c rollup.config.js",
@@ -17,6 +17,9 @@
     "url": "https://github.com/zhuli98/test2-my/issues"
   },
   "homepage": "https://github.com/zhuli98/test2-my#readme",
+  "unpackage": [
+    "node_modules"
+  ],
   "dependencies": {
     "-": "^0.0.1",
     "autoprefixer": "^10.4.16",

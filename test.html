@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    <script src="./dist/index.js"></script>
+    <script>
+        const { Hello } = MySdk
+        console.log('=====qqqq', MySdk)
+        const hello = Hello('zhuzhu')
+        window.addEventListener('DOMContentLoaded', () => {
+            const helloElement = document.getElementById('hello')
+            helloElement.textContent = hello
+        })
+    </script>
+</head>
+<body>
+    <h1>啦啦啦啦</h1>
+    <div id="hello"></div>
+</body>
+</html>
